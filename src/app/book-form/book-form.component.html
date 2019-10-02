@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Book Form</h2>
+    <div class="">{{message}}</div>
+    <form #bookForm="ngForm" (ngSubmit)="onSubmit()">
+        <input type="text" id="id" [(ngModel)]="book.id" name="id" placeholder="ID" class="form-control"><br>
+        <input type="text" id="name" [(ngModel)]="book.name" name="name" placeholder="Book Name" class="form-control"><br>
+        <input type="text" id="author" [(ngModel)]="book.author" name="author" placeholder="Author Name" class="form-control"><br>
+        <input type="text" id="genre" [(ngModel)]="book.genre" name="genre" placeholder="Genre" class="form-control"><br>
+        <input type="submit" class="btn btn-success" value="Save">
+    </form>
+</div>

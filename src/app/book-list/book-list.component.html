@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Books</h1>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let book of books">
+            <td>{{book.id}}</td>
+            <td>{{book.name}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.genre}}</td>
+        </tr>
+    </table>
+</div>
